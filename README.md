@@ -15,7 +15,7 @@ A sleek personal blog powered by React, TypeScript, and Vite.
 - Vite  
 
 📂 **Project Structure**
-
+```
 /src
 │
 ├── components/       # Reusable React components (e.g., Navbar)
@@ -25,6 +25,9 @@ A sleek personal blog powered by React, TypeScript, and Vite.
 ├── App.tsx           # Main application component and routing logic
 └── main.tsx          # Entry point for the React application
 
+```
+
+---
 
 
 
@@ -32,25 +35,25 @@ A sleek personal blog powered by React, TypeScript, and Vite.
 
 To set up and run this project locally, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
+   ```bash
+  git clone https://github.com/Shr0m0/blog
+  cd my-blog
+   ```
+2. **Install dependencies**:
+  ```bash
+  npm install
+  ```
 
-git clone https://github.com/Shr0m0/blog
-cd my-blog
+3. **Start the development server**:
+  ```bash
+  npm run dev
+  ```
 
-2. Install dependencies:
+4. **View the application**:
+    Open your browser and navigate to http://localhost:5173/ to see the blog.
+---
 
-npm install
-
-
-3. Start the development server:
-
-npm run dev
-
-
-4. View the application:
-Open your browser and navigate to http://localhost:5173/ to see the blog.
-
-
-📜 License
+###📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
