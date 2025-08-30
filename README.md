@@ -36,10 +36,11 @@ A sleek personal blog powered by React, TypeScript, and Vite.
 To set up and run this project locally, follow these steps:
 
 1. **Clone the repository**:
-   ```bash
+```bash
   git clone https://github.com/Shr0m0/blog
   cd my-blog
-   ```
+  ```
+
 2. **Install dependencies**:
   ```bash
   npm install
