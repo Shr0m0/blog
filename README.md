@@ -51,10 +51,12 @@ To set up and run this project locally, follow these steps:
   npm run dev
   ```
 
-4. **View the application**:
-    Open your browser and navigate to http://localhost:5173/ to see the blog.
+4. **View the application**:  
+    Open your browser and navigate to `http://localhost:5173` to view the application.
+
 ---
 
-###📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+### 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
