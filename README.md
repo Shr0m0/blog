@@ -17,12 +17,14 @@ A sleek personal blog powered by React, TypeScript, and Vite.
 📂 **Project Structure**
 
 /src
-├── components # Reusable React components (e.g., Navbar)
-├── pages # Page components (Home, About, BlogList, BlogPost)
-├── posts # Blog content stored in JSON files
-├── styles # Global CSS files
-├── App.tsx # Main application component and routing logic
-└── main.tsx # Entry point for the React application
+│
+├── components/       # Reusable React components (e.g., Navbar)
+├── pages/            # Page components (Home, About, BlogList, BlogPost)
+├── posts/            # Blog content stored in JSON files
+├── styles/           # Global CSS files
+├── App.tsx           # Main application component and routing logic
+└── main.tsx          # Entry point for the React application
+
 
 
 
