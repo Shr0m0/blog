@@ -15,6 +15,7 @@ A sleek personal blog powered by React, TypeScript, and Vite.
 - Vite  
 
 📂 **Project Structure**
+
 /src
 ├── components # Reusable React components (e.g., Navbar)
 ├── pages # Page components (Home, About, BlogList, BlogPost)
@@ -31,21 +32,21 @@ To set up and run this project locally, follow these steps:
 
 1. Clone the repository:
 
-    git clone https://github.com/Shr0m0/blog
-    cd my-blog
+git clone https://github.com/Shr0m0/blog
+cd my-blog
 
 2. Install dependencies:
 
-    npm install
+npm install
 
 
 3. Start the development server:
 
-    npm run dev
+npm run dev
 
 
 4. View the application:
-    Open your browser and navigate to http://localhost:5173/ to see the blog.
+Open your browser and navigate to http://localhost:5173/ to see the blog.
 
 
 📜 License
