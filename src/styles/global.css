@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #0070f3;
+  --secondary: #ff0080;
+  --bg: transparent; /* We'll use gradient on body directly */
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --text: #222222;
+  --text-secondary: #666666;
+  --footer-bg: transparent; /* Matches gradient */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg,  #032a20 3%, #064e3b 70%, #3dd9b8 100%); 
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: rgba(255, 255, 255, 0.05); 
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px); 
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Home page */
+.home-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.recent-posts-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Blog Cards */
+.post-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.97);
+}
+
+.post-card-title {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.post-card-excerpt {
+  color: var(--text-secondary);
+}
+
+/* BlogPost page */
+.blog-post {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.blog-title {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.blog-date {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-content p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.not-found {
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* View All Blogs link */
+.view-all-container {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.view-all-link {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: var(--secondary);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.05); 
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+}

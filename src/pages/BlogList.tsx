@@ -1,17 +1,20 @@
-import { Link } from 'react-router-dom';
-import posts from '../posts/posts.json';
+import PostCard from "../components/PostCard";
+import posts from "../posts/posts.json";
 
 export default function BlogList() {
   return (
     <div>
-      <h1>All Blogs</h1>
-      {posts.map(post => (
-        <div key={post.id} className="post-card">
-          <h2>{post.title}</h2>
-          <p>{post.excerpt}</p>
-          <Link to={`/blogs/${post.id}`}>Read More</Link>
-        </div>
-      ))}
+      <h1 className="bloglist-title">All Blogs</h1>
+      <div className="bloglist-container">
+        {posts.map(post => (
+          <PostCard
+            key={post.id}
+            id={post.id}
+            title={post.title}
+            excerpt={post.excerpt}
+          />
+        ))}
+      </div>
     </div>
   );
 }
